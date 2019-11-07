@@ -1,0 +1,68 @@
+body{
+	cursor:url("medida/red.cur");
+}
+h3{
+	font-size:20pt;
+}
+p{
+	text-align:left;
+	width:770px;
+	font-size:12pt;
+}
+.gameboard{
+	font-size:36pt;
+	font-family:'Impact';
+}
+#currentcolor{
+	background-color:red;
+	height:64px;
+	width:64px;
+}
+.background{
+	background-color:#BBBBDD;
+	border:2px solid black;
+	align:center;
+}
+.leftmargin{
+	background-color:#BBBBDD;
+	height:400px;
+	width:190px;
+}
+.game{
+	background-color:#BBBBDD;
+	height:400px;
+	width:430px;
+}
+.rightmargin{
+	background-color:#BBBBDD;
+	height:400px;
+	width:150px;
+}
+.guesses{
+	vertical-align:top;
+}
+.guess{
+	background-color:black;
+	height:30px;
+	width:30px;
+}
+.responses{
+	vertical-align:top;
+}
+.response{
+	background-color:black;
+	height:14px;
+	width:14px;
+}
+.colors{
+	font-size:20;
+	font-family:'Impact';
+	font-weight:normal;
+}
+.selections{
+	vertical-align:top;
+}
+.selection{
+	height:100px;
+	width:100px;
+}
