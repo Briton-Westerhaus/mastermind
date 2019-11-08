@@ -1,18 +1,11 @@
-<?php
-session_start();
-?>
 <html lang="en-US" xml:lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>Media Clambake - Mastermind by Briton Westerhaus.</title>
+<title>Briton Westerhaus - Mastermind</title>
 <meta name="description" content="An online version of the mastermind boardgame." />
 <meta name="keywords" content="media, entertainment, fun, games" />
 <meta name="author" content="Briton Westerhaus" />
-<link rel="stylesheet" type="text/css" href="style/Mastermind.css" />
-<script src="script/comment.js"></script>
-<script src="script/Mastermind.js"></script>
-<?php include("script/content.php"); ?>
-<?php include("begin.html");?>
-<?php View(); ?>
+<link rel="stylesheet" type="text/css" href="default.css" />
+<script src="default.js"></script>
 <p class="titlebar"></p>
 <div class="content">
 <table align="center" style="border:none"><tr><td><h3 class="colors">Current Color:</h3></td><td id="currentcolor"></td></tr></table>
@@ -232,21 +225,6 @@ You have ten guesses to get the pattern right.  Enjoy!
 </center>
 <!--End Instructions-->
 <script type="text/javascript">newgame();</script>
-<br />
-<a href="comment.php?category=games&content=Mastermind">Comment</a>
-<br />
-<?php DisplayShareLinks(); ?><br /><button id="butt" onclick="showcomment();">Post a Comment</button>
-<form id="commentarea" action="comment.php" method="post" style="visibility:hidden" onsubmit"return validate(<?php echo isset($_SESSION[username]); ?>)">
-</form>
-<?php CommentsAndRating(); ?>
-<table class="comments" border="2">
-<tr>
-<th class="user">User</th>
-<th class="comment">Comment</th>
-<th class="rating">Rating</th>
-<th>Date</th>
-</tr>
-<?php DisplayComments(); ?>
 </table>
 </div>
 </center>
