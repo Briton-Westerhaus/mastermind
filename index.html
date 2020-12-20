@@ -10,7 +10,7 @@
 	</head>
 	<body>
 		<div class="content">
-			<table style="border:none"><tr><td><h3 class="colors">Current Color:</h3></td><td id="currentcolor"></td></tr></table>
+			<div class="colors"><h3>Current Color:</h3><div id="currentcolor"></div></div>
 				<br />
 				<!--Game box-->
 				<table class="background">
@@ -188,7 +188,7 @@
 									<td class="selections">
 										<table class="selectionboard">
 											<tr>
-												<th colspan="2" class="colors">Choose your color:</th>
+												<th colspan="2" class="colors-header">Choose your color:</th>
 											</tr>
 											<tr>
 												<td class="selection" onclick="changeColor('red')" style="background-color:red" onmouseover="this.style.backgroundColor='#FF5555'" onmouseout="this.style.backgroundColor='red'"></td>
@@ -203,7 +203,7 @@
 												<td class="selection" onclick="changeColor('green')" style="background-color:green" onmouseover="this.style.backgroundColor='#11AA11'" onmouseout="this.style.backgroundColor='green'"></td>
 											</tr>
 											<tr>
-												<td colspan="2" style="text-align: center;"><button onclick="guess()" class="colors">Take a guess!</button></td>
+												<td colspan="2" style="text-align: center;"><button onclick="guess()" class="colors-header">Take a guess!</button></td>
 											</tr>
 										</table>
 									</td>

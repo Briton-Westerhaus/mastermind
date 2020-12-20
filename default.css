@@ -53,23 +53,44 @@ p {
 
 .guess {
 	background-color:black;
-	height:30px;
-	width:30px;
+	height: 30px;
+	width: 30px;
 }
 
 .responses {
-	vertical-align:top;
+	vertical-align: top;
 }
 .response {
 	background-color:black;
-	height:14px;
-	width:14px;
+	height: 13px;
+	width: 13px;
 }
 
 .colors {
+	margin-left: auto;
+	margin-right: auto;
+	white-space: nowrap;
+	width: max-content;
+}
+
+.colors h3, .colors-header {
 	font-size: 20px;
 	font-family: 'Impact';
 	font-weight: normal;
+}
+
+.colors h3 {
+	display: inline-block;
+	line-height: 64px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	vertical-align: top;
+	margin-right: 5px;
+}
+
+#currentcolor {
+	display: inline-block;
+	border: 1px solid rgb(102, 102, 102);
 }
 
 .selections {
