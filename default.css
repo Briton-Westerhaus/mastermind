@@ -67,18 +67,18 @@ p {
 }
 
 .colors {
-	font-size:20;
-	font-family:'Impact';
-	font-weight:normal;
+	font-size: 20px;
+	font-family: 'Impact';
+	font-weight: normal;
 }
 
 .selections {
-	vertical-align:top;
+	vertical-align: top;
 }
 
 .selection {
-	height:100px;
-	width:100px;
+	height: 100px;
+	width: 100px;
 }
 
 table {
