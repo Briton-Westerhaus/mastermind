@@ -54,6 +54,7 @@ p {
 
 .guesses {
 	vertical-align: top;
+	display: inline-block;
 }
 
 .guess {
@@ -64,6 +65,7 @@ p {
 
 .responses {
 	vertical-align: top;
+	display: inline-block;
 }
 .response {
 	background-color:black;
@@ -100,6 +102,7 @@ p {
 
 .selections {
 	vertical-align: top;
+	display: inline-block;
 }
 
 .selection {
