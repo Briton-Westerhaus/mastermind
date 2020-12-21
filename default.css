@@ -1,68 +1,120 @@
-body{
-	cursor:url("red.cur"), auto;
+body {
+	cursor: url("red.cur"), auto;
 }
-h3{
-	font-size:20pt;
+
+h3 {
+	font-size: 20pt;
 }
-p{
-	text-align:left;
-	width:770px;
-	font-size:12pt;
+
+p {
+	text-align: left;
+	width: 770px;
+	font-size: 12pt;
 }
-.gameboard{
-	font-size:36pt;
-	font-family:'Impact';
+
+.gameboard {
+	font-size: 36pt;
+	font-family: 'Impact';
 }
-#currentcolor{
-	background-color:red;
-	height:64px;
-	width:64px;
+
+#currentcolor {
+	background-color: red;
+	height: 64px;
+	width: 64px;
 }
-.background{
-	background-color:#BBBBDD;
-	border:2px solid black;
-	align:center;
+
+.background {
+	background-color: #BBBBDD;
+	border: 2px solid black;
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+	width: auto;
+	padding-left: 190px;
+	padding-right: 190px;
 }
-.leftmargin{
-	background-color:#BBBBDD;
-	height:400px;
-	width:190px;
+
+.leftmargin {
+	background-color: #BBBBDD;
+	height: 400px;
+	width: 190px;
 }
-.game{
-	background-color:#BBBBDD;
-	height:400px;
-	width:430px;
+
+.game {
+	background-color: #BBBBDD;
+	height: 400px;
+	width: 430px;
 }
-.rightmargin{
-	background-color:#BBBBDD;
-	height:400px;
-	width:150px;
+
+.rightmargin {
+	background-color: #BBBBDD;
+	height: 400px;
+	width: 150px;
 }
-.guesses{
-	vertical-align:top;
+
+.guesses {
+	vertical-align: top;
+	display: inline-block;
 }
-.guess{
+
+.guesses td {
 	background-color:black;
-	height:30px;
-	width:30px;
+	height: 30px;
+	width: 30px;
 }
-.responses{
-	vertical-align:top;
+
+.responses {
+	vertical-align: top;
+	display: inline-block;
 }
-.response{
+.responses td {
 	background-color:black;
-	height:14px;
-	width:14px;
+	height: 13px;
+	width: 13px;
 }
-.colors{
-	font-size:20;
-	font-family:'Impact';
-	font-weight:normal;
+
+.colors {
+	margin-left: auto;
+	margin-right: auto;
+	white-space: nowrap;
+	width: max-content;
 }
-.selections{
-	vertical-align:top;
+
+.colors h3, .colors-header {
+	font-size: 20px;
+	font-family: 'Impact';
+	font-weight: normal;
 }
-.selection{
-	height:100px;
-	width:100px;
+
+.colors h3 {
+	display: inline-block;
+	line-height: 64px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	vertical-align: top;
+	margin-right: 5px;
+}
+
+#currentcolor {
+	display: inline-block;
+	border: 1px solid rgb(102, 102, 102);
+}
+
+.selections {
+	vertical-align: top;
+	display: inline-block;
+}
+
+.selections td {
+	height: 100px;
+	width: 100px;
+}
+
+table {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.content {
+	text-align: center;
 }
