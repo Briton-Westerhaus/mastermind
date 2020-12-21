@@ -1,5 +1,5 @@
 let currentrow;
-var gamearray = new Array(4);
+let gamearray = new Array(4);
 
 function newgame() {
 	let element = document.getElementById("currentcolor");
@@ -7,30 +7,30 @@ function newgame() {
 	element.style.backgroundColor = 'red';
 	currentrow = 1;
 	document.getElementById(currentrow).style.backgroundImage = "url(media/arrow.bmp)";
-	for (var i = 0; i < 4; i++) {
+	for (let i = 0; i < 4; i++) {
 		theColor = Math.round(5 * Math.random());
-		switch(theColor) {
-			case(0):
+		switch (theColor) {
+			case 0:
 				gamearray[i] = "red";
 				break;
 
-			case(1):
+			case 1:
 				gamearray[i] = "blue";
 				break;
 
-			case(2):
+			case 2:
 				gamearray[i] = "green";
 				break;
 
-			case(3):
+			case 3:
 				gamearray[i] = "white";
 				break;
 
-			case(4):
+			case 4:
 				gamearray[i] = "yellow";
 				break;
 
-			case(5):
+			case 5:
 				gamearray[i] = "orange";
 				break;
 
@@ -96,7 +96,8 @@ function endofgame(message) {
 	for (let i = 0; i < 4; i++) {
 		document.getElementById("11." + i).style.backgroundColor = gamearray[i];
 	}
-	var answer = confirm(message + "\nWould you like to play a new game?");
+	let answer = confirm(message + "\nWould you like to play a new game?");
+	
 	if (answer)
 		window.location.reload(false);
 }
