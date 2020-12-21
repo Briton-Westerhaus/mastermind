@@ -57,7 +57,7 @@ p {
 	display: inline-block;
 }
 
-.guess {
+.guesses td {
 	background-color:black;
 	height: 30px;
 	width: 30px;
@@ -67,7 +67,7 @@ p {
 	vertical-align: top;
 	display: inline-block;
 }
-.response {
+.responses td {
 	background-color:black;
 	height: 13px;
 	width: 13px;
@@ -105,7 +105,7 @@ p {
 	display: inline-block;
 }
 
-.selection {
+.selections td {
 	height: 100px;
 	width: 100px;
 }
