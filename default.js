@@ -101,3 +101,17 @@ function endofgame(message) {
 	if (answer)
 		window.location.reload(false);
 }
+
+/**
+ * Shows the help modal.
+ */
+function showModal() {
+    document.getElementById("ModalContainer").style.display = "block";  
+}
+
+/**
+ * Hides the help modal.
+ */
+function hideModal() {
+    document.getElementById("ModalContainer").style.display = "None";
+}

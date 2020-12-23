@@ -10,11 +10,12 @@
 	</head>
 	<body>
 		<div class="content">
-			<div class="colors"><h3>Current Color:</h3><div id="currentcolor"></div></div>
-				<br />
-				<!--Game box-->
-				<div class="background">
-					<h1 class="gameboard">Mastermind</h1>
+			<h1 class="gameboard">Mastermind</h1>
+			<button class="help" onclick="showModal()">?</button>
+			<div style="clear: both; font-size: 0px;">.</div>
+			<!--Game box-->
+			<div class="background">
+				<div class="colors"><h3>Current Color:</h3><div id="currentcolor"></div></div>
 					<table class="guesses">
 						<tbody>
 							<tr>
@@ -205,18 +206,17 @@
 				</div>
 				<!--End Game Box-->
 				<!--Instructions-->
-				<br />
-				<br />
-				<h3 style="margin-left: auto; margin-right: auto; width: max-content;">How to play:</h3>
-				<p style="margin-left: auto; margin-right: auto;">
-				Select the color peg you want to place and then put it in the current row.  After you have a pattern of four pegs, take a guess!
-				The game will place up to four pins next to your pattern.  Each <font color="red">red</font> pin means that you have a peg that is the right color and where it belongs.
-				Each <font color="white" style="background-color:black">white</font> pin means that you have a peg of a color that is in the pattern, but not in the right place.
-				You have ten guesses to get the pattern right.  Enjoy!
-				</p>
+				<div id="ModalContainer">
+					<div class="modal">
+						<h3 style="margin-left: auto; margin-right: auto; width: max-content;">How to play:</h3>
+						<p>Select the color peg you want to place and then put it in the current row.  After you have a pattern of four pegs, take a guess! The game will place up to four pins next to your pattern.  Each <span style="color: red;">red</span> pin means that you have a peg that is the right color and where it belongs.</p>
+						<p>Each <span style="color: white; background-color: black">white</span> pin means that you have a peg of a color that is in the pattern, but not in the right place.</p>
+						<p>You have ten guesses to get the pattern right.  Enjoy!</p>
+						<button onclick="hideModal()">&#10004;</button>
+					</div>
+				</div>
 				<!--End Instructions-->
 				<script type="text/javascript">newgame();</script>
-			</div>
 			</div>
 		</div>
 	</body>
