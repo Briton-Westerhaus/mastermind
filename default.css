@@ -1,5 +1,6 @@
 body {
 	cursor: url("red.cur"), auto;
+	/* New cusrsors should be 32x32 */
 }
 
 h3 {
