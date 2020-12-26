@@ -43,7 +43,7 @@ function newgame() {
 function changeColor(color) {
 	let element = document.getElementById("currentcolor");
 	element.style.backgroundColor = color;
-	document.body.style.cursor="url(" + color + ".cur), auto";
+	document.getElementById("Background").style.cursor="url(" + color + ".cur) 16 16, auto";
 }
 
 function colorme(thisone) {
