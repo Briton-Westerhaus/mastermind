@@ -1,9 +1,9 @@
 h3 {
-	font-size: 20pt;
+	font-size: 27px;
 }
 
 .gameboard {
-	font-size: 36pt;
+	font-size: 48px;
 	font-family: 'Impact';
 	display: inline-block;
 }
@@ -51,8 +51,8 @@ h3 {
 
 .guesses td {
 	background-color:black;
-	height: 30px;
-	width: 30px;
+	height: 36px;
+	width: 36px;
 }
 
 .responses {
@@ -61,8 +61,8 @@ h3 {
 }
 .responses td {
 	background-color:black;
-	height: 13px;
-	width: 13px;
+	height: 16px;
+	width: 16px;
 }
 
 .colors {
@@ -184,4 +184,11 @@ button.help {
     font-weight: bold;
     position: relative;
     left: 17em;
+}
+
+.guess {
+	font-weight: bold;
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
+	cursor: pointer;
 }
