@@ -48,7 +48,8 @@ function changeColor(color) {
 
 function colorme(thisone) {
 	if (thisone.id.substring(0,1) == currentrow || thisone.id.substring(0,2) == currentrow)
-		thisone.style.backgroundColor = document.getElementById("currentcolor").style.backgroundColor;
+		thisone.childNodes[0].style.backgroundColor = document.getElementById("currentcolor").style.backgroundColor;
+		thisone.className = "placed-pin";
 }
 
 function guess() {

@@ -51,9 +51,24 @@ h1 {
 }
 
 .guesses td {
-	background-color: black;
 	height: 36px;
 	width: 36px;
+	border: 1px solid rgb(102, 102, 102);
+}
+
+.guesses td section {
+	height: 12px;
+	width: 12px;
+	border-radius: 6px;
+	margin: 12px;
+	background-color: black;
+}
+
+.guesses td.placed-pin section {
+	height: 28px;
+	width: 28px;
+	border-radius: 14px;
+	margin: 4px;
 }
 
 td.arrow-container {
@@ -67,12 +82,14 @@ td.arrow-container {
 	padding-top: 10px;
 	padding-left: -10px;
 	padding-right: 10px;
-	padding-bottom: 50px;
+	padding-bottom: 53px;
+	border-spacing: 1px;
 }
 .responses td {
 	background-color:black;
 	height: 16px;
 	width: 16px;
+	border: 1px solid rgb(102, 102, 102);
 }
 
 .colors {
