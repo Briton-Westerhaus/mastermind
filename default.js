@@ -57,7 +57,7 @@ function guess() {
 	let pinplacedi = new Array(false, false, false, false);
 	let pinplacedj = new Array(false, false, false, false);
 	for (let i = 0; i < 4; i++) {
-		if (document.getElementById(currentrow + "." + i).style.backgroundColor == gamearray[i]) {
+		if (document.getElementById(currentrow + "." + i).childNodes[0].style.backgroundColor == gamearray[i]) {
 			placepin('red');
 			pinplacedi[i] = true;
 			pinplacedj[i] = true;
@@ -66,7 +66,7 @@ function guess() {
 	}
 	for (let i = 0; i < 4; i++) {
 		for (let j = 0; j < 4; j++) {
-			if (document.getElementById(currentrow + "." + i).style.backgroundColor == gamearray[j] && !pinplacedj[j] && !pinplacedi[i]) {
+			if (document.getElementById(currentrow + "." + i).childNodes[0].style.backgroundColor == gamearray[j] && !pinplacedj[j] && !pinplacedi[i]) {
 				placepin('white');
 				pinplacedi[i] = true;
 				pinplacedj[j] = true;
