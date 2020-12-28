@@ -6,7 +6,7 @@ function newgame() {
 	let theColor;
 	element.style.backgroundColor = 'red';
 	currentrow = 1;
-	document.getElementById(currentrow).style.backgroundImage = "url(media/arrow.bmp)";
+	document.getElementById(currentrow).style.backgroundImage = "url(arrow.png)";
 	for (let i = 0; i < 4; i++) {
 		theColor = Math.round(5 * Math.random());
 		switch (theColor) {
@@ -74,7 +74,7 @@ function guess() {
 	}
 	document.getElementById(currentrow).style.backgroundImage = "";
 	currentrow++;
-	document.getElementById(currentrow).style.backgroundImage = "url(media/arrow.bmp)";
+	document.getElementById(currentrow).style.backgroundImage = "url(arrow.png)";
 	if (reds == 4) {
 		endofgame('You Win!');
 		return;
