@@ -47,12 +47,13 @@ function changeColor(color) {
 }
 
 function colorme(thisone) {
-	if (thisone.id.substring(0,1) == currentrow || thisone.id.substring(0,2) == currentrow)
+	if (thisone.id.substring(0,1) == currentrow || thisone.id.substring(0,2) == currentrow) {
 		thisone.childNodes[0].style.backgroundColor = document.getElementById("currentcolor").style.backgroundColor;
 		thisone.className = "placed-pin";
+	}
 }
 
-function guess() {
+async function guess() {
 	let reds = 0;
 	let pinplacedi = new Array(false, false, false, false);
 	let pinplacedj = new Array(false, false, false, false);
@@ -94,10 +95,13 @@ function placepin(color) {
 	}
 }
 
-function endofgame(message) {
+async function endofgame(message) {
 	for (let i = 0; i < 4; i++) {
-		document.getElementById("11." + i).style.backgroundColor = gamearray[i];
+		document.getElementById("11." + i).childNodes[0].style.backgroundColor = gamearray[i];
+		document.getElementById("11." + i).className = "placed-pin";
 	}
+	await new Promise(r => setTimeout(r, 100)); 
+
 	let answer = confirm(message + "\nWould you like to play a new game?");
 	
 	if (answer)
