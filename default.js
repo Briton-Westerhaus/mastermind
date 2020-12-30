@@ -86,8 +86,9 @@ function guess() {
 
 function placepin(color) {
 	for (let i = 0; i < 4; i++) {
-		if (document.getElementById("2" + currentrow + "." + i).style.backgroundColor != 'red' && document.getElementById("2" + currentrow + "." + i).style.backgroundColor != 'white') {
-			document.getElementById("2" + currentrow + "." + i).style.backgroundColor = color;
+		if (document.getElementById("2" + currentrow + "." + i).className != "placed-pin") {
+			document.getElementById("2" + currentrow + "." + i).childNodes[0].style.backgroundColor = color;
+			document.getElementById("2" + currentrow + "." + i).className = "placed-pin";
 			return;
 		}
 	}
