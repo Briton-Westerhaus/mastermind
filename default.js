@@ -49,6 +49,7 @@ function changeColor(color) {
 function colorme(thisone) {
 	if (thisone.id.substring(0,1) == currentrow || thisone.id.substring(0,2) == currentrow) {
 		thisone.childNodes[0].style.backgroundColor = document.getElementById("currentcolor").style.backgroundColor;
+		thisone.childNodes[0].style.backgroundImage = "radial-gradient(white -50%, " + document.getElementById("currentcolor").style.backgroundColor + " 60%, black 85%)";
 		thisone.className = "placed-pin";
 	}
 }
@@ -99,6 +100,7 @@ async function endofgame(message) {
 	for (let i = 0; i < 4; i++) {
 		document.getElementById("11." + i).childNodes[0].style.backgroundColor = gamearray[i];
 		document.getElementById("11." + i).className = "placed-pin";
+		document.getElementById("11." + i).childNodes[0].style.backgroundImage = "radial-gradient(white -50%, " + gamearray[i] + " 60%, black 85%)";
 	}
 	await new Promise(r => setTimeout(r, 100)); 
 
