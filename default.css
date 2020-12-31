@@ -151,6 +151,7 @@ div.colors {
 .selections td {
 	height: 100px;
 	width: 100px;
+	cursor: pointer;
 }
 
 table {
