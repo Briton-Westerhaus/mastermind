@@ -21,9 +21,8 @@ h1 {
 	margin-left: auto;
 	margin-right: auto;
 	width: auto;
-	padding-left: 190px;
-	padding-right: 190px;
 	cursor: url("red.cur") 16 16, auto;
+	width: 80%;
 }
 
 .arrows {
@@ -43,10 +42,14 @@ h1 {
 	background-repeat: no-repeat;
 }
 
+.game-board {
+	display: inline-block;
+	background-color: rgb(200, 200, 200);
+}
+
 .guesses {
 	vertical-align: top;
 	display: inline-block;
-	background-color: rgb(200, 200, 200);
 	padding: 10px;
 }
 
@@ -79,7 +82,6 @@ td.arrow-container {
 .responses {
 	vertical-align: top;
 	display: inline-block;
-	background-color: rgb(200, 200, 200);
 	padding-top: 10px;
 	padding-left: -10px;
 	padding-right: 10px;
