@@ -10,214 +10,211 @@
 	</head>
 	<body>
 		<div class="content">
-			<h1 class="gameboard">Mastermind</h1>
+			<h1>Mastermind</h1>
 			<button class="help" onclick="showModal()">?</button>
 			<div style="clear: both; font-size: 0px;">.</div>
 			<!--Game box-->
 			<div id="Background">
-				<div class="colors"><h3>Current Color:</h3><div id="currentcolor"></div></div>
+				<table class="selections">
+					<tbody>
+						<tr>
+							<th colspan="6" class="colors-header">Choose your color:</th>
+						</tr>
+						<tr>
+							<td id="Red" onclick="changeColor('red')" style="background-color:red" onmouseover="this.style.backgroundColor='#FF5555'" onmouseout="this.style.backgroundColor='red'"></td>
+							<td id="Orange" onclick="changeColor('orange')" style="background-color:orange" onmouseover="this.style.backgroundColor='#FFCC66'" onmouseout="this.style.backgroundColor='orange'"></td>
+							<td id="Yellow" onclick="changeColor('yellow')" style="background-color:yellow" onmouseover="this.style.backgroundColor='#FFFF77'" onmouseout="this.style.backgroundColor='yellow'"></td>
+							<td id="Green" onclick="changeColor('green')" style="background-color:green" onmouseover="this.style.backgroundColor='#11AA11'" onmouseout="this.style.backgroundColor='green'"></td>
+							<td id="Blue" onclick="changeColor('blue')" style="background-color:blue" onmouseover="this.style.backgroundColor='#5555FF'" onmouseout="this.style.backgroundColor='blue'"></td>
+							<td id="White" onclick="changeColor('white')" style="background-color:white" onmouseover="this.style.backgroundColor='#FFFFDD'" onmouseout="this.style.backgroundColor='white'"></td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="arrows">
+					<tbody>
+						<tr><td id="1"></td></tr>
+						<tr><td id="2"></td></tr>
+						<tr><td id="3"></td></tr>
+						<tr><td id="4"></td></tr>
+						<tr><td id="5"></td></tr>
+						<tr><td id="6"></td></tr>
+						<tr><td id="7"></td></tr>
+						<tr><td id="8"></td></tr>
+						<tr><td id="9"></td></tr>
+						<tr><td id="10"></td></tr>
+						<tr><td id="11"></td></tr>
+					</tbody>
+				</table><div class="game-board">
 					<table class="guesses">
 						<tbody>
 							<tr>
-								<td id="1" style="background-color:#BBBBDD"></td>
-								<td id="1.0" onclick="colorme(this)"></td>
-								<td id="1.1" onclick="colorme(this)"></td>
-								<td id="1.2" onclick="colorme(this)"></td>
-								<td id="1.3" onclick="colorme(this)"></td>
+								<td id="1.0" onclick="colorme(this)"><section></section></td>
+								<td id="1.1" onclick="colorme(this)"><section></section></td>
+								<td id="1.2" onclick="colorme(this)"><section></section></td>
+								<td id="1.3" onclick="colorme(this)"><section></section></td>
 							</tr>
 							<tr>
-								<td id="2" style="background-color:#BBBBDD"></td>
-								<td id="2.0" onclick="colorme(this)"></td>
-								<td id="2.1" onclick="colorme(this)"></td>
-								<td id="2.2" onclick="colorme(this)"></td>
-								<td id="2.3" onclick="colorme(this)"></td>
+								<td id="2.0" onclick="colorme(this)"><section></section></td>
+								<td id="2.1" onclick="colorme(this)"><section></section></td>
+								<td id="2.2" onclick="colorme(this)"><section></section></td>
+								<td id="2.3" onclick="colorme(this)"><section></section></td>
 							</tr>
 							<tr>
-								<td id="3" style="background-color:#BBBBDD"></td>
-								<td id="3.0" onclick="colorme(this)"></td>
-								<td id="3.1" onclick="colorme(this)"></td>
-								<td id="3.2" onclick="colorme(this)"></td>
-								<td id="3.3" onclick="colorme(this)"></td>
+								<td id="3.0" onclick="colorme(this)"><section></section></td>
+								<td id="3.1" onclick="colorme(this)"><section></section></td>
+								<td id="3.2" onclick="colorme(this)"><section></section></td>
+								<td id="3.3" onclick="colorme(this)"><section></section></td>
 							</tr>
 							<tr>
-								<td id="4" style="background-color:#BBBBDD"></td>
-								<td id="4.0" onclick="colorme(this)"></td>
-								<td id="4.1" onclick="colorme(this)"></td>
-								<td id="4.2" onclick="colorme(this)"></td>
-								<td id="4.3" onclick="colorme(this)"></td>
+								<td id="4.0" onclick="colorme(this)"><section></section></td>
+								<td id="4.1" onclick="colorme(this)"><section></section></td>
+								<td id="4.2" onclick="colorme(this)"><section></section></td>
+								<td id="4.3" onclick="colorme(this)"><section></section></td>
 							</tr>
 							<tr>
-								<td id="5" style="background-color:#BBBBDD"></td>
-								<td id="5.0" onclick="colorme(this)"></td>
-								<td id="5.1" onclick="colorme(this)"></td>
-								<td id="5.2" onclick="colorme(this)"></td>
-								<td id="5.3" onclick="colorme(this)"></td>
+								<td id="5.0" onclick="colorme(this)"><section></section></td>
+								<td id="5.1" onclick="colorme(this)"><section></section></td>
+								<td id="5.2" onclick="colorme(this)"><section></section></td>
+								<td id="5.3" onclick="colorme(this)"><section></section></td>
 							</tr>
 							<tr>
-								<td id="6" style="background-color:#BBBBDD"></td>
-								<td id="6.0" onclick="colorme(this)"></td>
-								<td id="6.1" onclick="colorme(this)"></td>
-								<td id="6.2" onclick="colorme(this)"></td>
-								<td id="6.3" onclick="colorme(this)"></td>
+								<td id="6.0" onclick="colorme(this)"><section></section></td>
+								<td id="6.1" onclick="colorme(this)"><section></section></td>
+								<td id="6.2" onclick="colorme(this)"><section></section></td>
+								<td id="6.3" onclick="colorme(this)"><section></section></td>
 							</tr>
 							<tr>
-								<td id="7" style="background-color:#BBBBDD"></td>
-								<td id="7.0" onclick="colorme(this)"></td>
-								<td id="7.1" onclick="colorme(this)"></td>
-								<td id="7.2" onclick="colorme(this)"></td>
-								<td id="7.3" onclick="colorme(this)"></td>
+								<td id="7.0" onclick="colorme(this)"><section></section></td>
+								<td id="7.1" onclick="colorme(this)"><section></section></td>
+								<td id="7.2" onclick="colorme(this)"><section></section></td>
+								<td id="7.3" onclick="colorme(this)"><section></section></td>
 							</tr>
 							<tr>
-								<td id="8" style="background-color:#BBBBDD"></td>
-								<td id="8.0" onclick="colorme(this)"></td>
-								<td id="8.1" onclick="colorme(this)"></td>
-								<td id="8.2" onclick="colorme(this)"></td>
-								<td id="8.3" onclick="colorme(this)"></td>
+								<td id="8.0" onclick="colorme(this)"><section></section></td>
+								<td id="8.1" onclick="colorme(this)"><section></section></td>
+								<td id="8.2" onclick="colorme(this)"><section></section></td>
+								<td id="8.3" onclick="colorme(this)"><section></section></td>
 							</tr>
 							<tr>
-								<td id="9" style="background-color:#BBBBDD"></td>
-								<td id="9.0" onclick="colorme(this)"></td>
-								<td id="9.1" onclick="colorme(this)"></td>
-								<td id="9.2" onclick="colorme(this)"></td>
-								<td id="9.3" onclick="colorme(this)"></td>
+								<td id="9.0" onclick="colorme(this)"><section></section></td>
+								<td id="9.1" onclick="colorme(this)"><section></section></td>
+								<td id="9.2" onclick="colorme(this)"><section></section></td>
+								<td id="9.3" onclick="colorme(this)"><section></section></td>
 							</tr>
 							<tr>
-								<td id="10" style="background-color:#BBBBDD"></td>
-								<td id="10.0" onclick="colorme(this)"></td>
-								<td id="10.1" onclick="colorme(this)"></td>
-								<td id="10.2" onclick="colorme(this)"></td>
-								<td id="10.3" onclick="colorme(this)"></td>
+								<td id="10.0" onclick="colorme(this)"><section></section></td>
+								<td id="10.1" onclick="colorme(this)"><section></section></td>
+								<td id="10.2" onclick="colorme(this)"><section></section></td>
+								<td id="10.3" onclick="colorme(this)"><section></section></td>
 							</tr>
 							<tr>
-								<td id="11" style="background-color:#BBBBDD"></td>
-								<td id="11.0"></td>
-								<td id="11.1"></td>
-								<td id="11.2"></td>
-								<td id="11.3"></td>
+								<td id="11.0"><section></section></td>
+								<td id="11.1"><section></section></td>
+								<td id="11.2"><section></section></td>
+								<td id="11.3"><section></section></td>
 							</tr>
 						</tbody>
-					</table>
-					<table class="responses">
+					</table><table class="responses">
 						<tbody>
 							<tr>
-								<td id="21.0"></td>
-								<td id="21.1"></td>
+								<td id="21.0"><section></section></td>
+								<td id="21.1"><section></section></td>
 							</tr>
 							<tr>
-								<td id="21.2"></td>
-								<td id="21.3"></td>
+								<td id="21.2"><section></section></td>
+								<td id="21.3"><section></section></td>
 							</tr>
 							<tr>
-								<td id="22.0"></td>
-								<td id="22.1"></td>
+								<td id="22.0"><section></section></td>
+								<td id="22.1"><section></section></td>
 							</tr>
 							<tr>
-								<td id="22.2"></td>
-								<td id="22.3"></td>
+								<td id="22.2"><section></section></td>
+								<td id="22.3"><section></section></td>
 							</tr>
 							<tr>
-								<td id="23.0"></td>
-								<td id="23.1"></td>
+								<td id="23.0"><section></section></td>
+								<td id="23.1"><section></section></td>
 							</tr>
 							<tr>
-								<td id="23.2"></td>
-								<td id="23.3"></td>
+								<td id="23.2"><section></section></td>
+								<td id="23.3"><section></section></td>
 							</tr>
 							<tr>
-								<td id="24.0"></td>
-								<td id="24.1"></td>
+								<td id="24.0"><section></section></td>
+								<td id="24.1"><section></section></td>
 							</tr>
 							<tr>
-								<td id="24.2"></td>
-								<td id="24.3"></td>
+								<td id="24.2"><section></section></td>
+								<td id="24.3"><section></section></td>
 							</tr>
 							<tr>
-								<td id="25.0"></td>
-								<td id="25.1"></td>
+								<td id="25.0"><section></section></td>
+								<td id="25.1"><section></section></td>
 							</tr>
 							<tr>
-								<td id="25.2"></td>
-								<td id="25.3"></td>
+								<td id="25.2"><section></section></td>
+								<td id="25.3"><section></section></td>
 							</tr>
 							<tr>
-								<td id="26.0"></td>
-								<td id="26.1"></td>
+								<td id="26.0"><section></section></td>
+								<td id="26.1"><section></section></td>
 							</tr>
 							<tr>
-								<td id="26.2"></td>
-								<td id="26.3"></td>
+								<td id="26.2"><section></section></td>
+								<td id="26.3"><section></section></td>
 							</tr>
 							<tr>
-								<td id="27.0"></td>
-								<td id="27.1"></td>
+								<td id="27.0"><section></section></td>
+								<td id="27.1"><section></section></td>
 							</tr>
 							<tr>
-								<td id="27.2"></td>
-								<td id="27.3"></td>
+								<td id="27.2"><section></section></td>
+								<td id="27.3"><section></section></td>
 							</tr>
 							<tr>
-								<td id="28.0"></td>
-								<td id="28.1"></td>
+								<td id="28.0"><section></section></td>
+								<td id="28.1"><section></section></td>
 							</tr>
 							<tr>
-								<td id="28.2"></td>
-								<td id="28.3"></td>
+								<td id="28.2"><section></section></td>
+								<td id="28.3"><section></section></td>
 							</tr>
 							<tr>
-								<td id="29.0"></td>
-								<td id="29.1"></td>
+								<td id="29.0"><section></section></td>
+								<td id="29.1"><section></section></td>
 							</tr>
 							<tr>
-								<td id="29.2"></td>
-								<td id="29.3"></td>
+								<td id="29.2"><section></section></td>
+								<td id="29.3"><section></section></td>
 							</tr>
 							<tr>
-								<td id="210.0"></td>
-								<td id="210.1"></td>
+								<td id="210.0"><section></section></td>
+								<td id="210.1"><section></section></td>
 							</tr>
 							<tr>
-								<td id="210.2"></td>
-								<td id="210.3"></td>
-							</tr>
-						</tbody>
-					</table>
-					<table class="selections">
-						<tbody>
-							<tr>
-								<th colspan="2" class="colors-header">Choose your color:</th>
-							</tr>
-							<tr>
-								<td onclick="changeColor('red')" style="background-color:red" onmouseover="this.style.backgroundColor='#FF5555'" onmouseout="this.style.backgroundColor='red'"></td>
-								<td onclick="changeColor('blue')" style="background-color:blue" onmouseover="this.style.backgroundColor='#5555FF'" onmouseout="this.style.backgroundColor='blue'"></td>
-							</tr>
-							<tr>
-								<td onclick="changeColor('orange')" style="background-color:orange" onmouseover="this.style.backgroundColor='#FFCC66'" onmouseout="this.style.backgroundColor='orange'"></td>
-								<td onclick="changeColor('white')" style="background-color:white" onmouseover="this.style.backgroundColor='#FFFFDD'" onmouseout="this.style.backgroundColor='white'"></td>
-							</tr>
-							<tr>
-								<td onclick="changeColor('yellow')" style="background-color:yellow" onmouseover="this.style.backgroundColor='#FFFF77'" onmouseout="this.style.backgroundColor='yellow'"></td>
-								<td onclick="changeColor('green')" style="background-color:green" onmouseover="this.style.backgroundColor='#11AA11'" onmouseout="this.style.backgroundColor='green'"></td>
-							</tr>
-							<tr>
-								<td colspan="2" style="text-align: center;"><button onclick="guess()" class="colors-header">Take a guess!</button></td>
+								<td id="210.2"><section></section></td>
+								<td id="210.3"><section></section></td>
 							</tr>
 						</tbody>
 					</table>
 				</div>
-				<!--End Game Box-->
-				<!--Instructions-->
-				<div id="ModalContainer">
-					<div class="modal">
-						<h3 style="margin-left: auto; margin-right: auto; width: max-content;">How to play:</h3>
-						<p>Select the color peg you want to place and then put it in the current row.  After you have a pattern of four pegs, take a guess! The game will place up to four pins next to your pattern.  Each <span style="color: red;">red</span> pin means that you have a peg that is the right color and where it belongs.</p>
-						<p>Each <span style="color: white; background-color: black">white</span> pin means that you have a peg of a color that is in the pattern, but not in the right place.</p>
-						<p>You have ten guesses to get the pattern right.  Enjoy!</p>
-						<button onclick="hideModal()">&#10004;</button>
-					</div>
-				</div>
-				<!--End Instructions-->
-				<script type="text/javascript">newgame();</script>
+				<div style="clear: both; font-size: 0px;">.</div>
+				<button onclick="guess()" class="guess">Take a guess!</button>
 			</div>
+			<!--End Game Box-->
+			<!--Instructions-->
+			<div id="ModalContainer">
+				<div class="modal">
+					<h3 style="margin-left: auto; margin-right: auto; width: max-content;">How to play:</h3>
+					<p>Select the color peg you want to place and then put it in the current row.  After you have a pattern of four pegs, take a guess! The game will place up to four pins next to your pattern.  Each <span style="color: red;">red</span> pin means that you have a peg that is the right color and where it belongs.</p>
+					<p>Each <span style="color: white; background-color: black">white</span> pin means that you have a peg of a color that is in the pattern, but not in the right place.</p>
+					<p>You have ten guesses to get the pattern right.  Enjoy!</p>
+					<button onclick="hideModal()">&#10004;</button>
+				</div>
+			</div>
+			<!--End Instructions-->
+			<script type="text/javascript">newgame();</script>
 		</div>
 	</body>
 </html>
