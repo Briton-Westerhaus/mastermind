@@ -1,10 +1,15 @@
 let currentrow;
 let gamearray = new Array(4);
+let currentColor = "red";
+
+function capitalize (theString) {
+	return theString.charAt(0).toUpperCase() + theString.slice(1);
+}
 
 function newgame() {
-	let element = document.getElementById("currentcolor");
+	let element = document.getElementById(capitalize(currentColor));
 	let theColor;
-	element.style.backgroundColor = 'red';
+	element.className = "selected";
 	currentrow = 1;
 	document.getElementById(currentrow).style.backgroundImage = "url(arrow.png)";
 	for (let i = 0; i < 4; i++) {
@@ -41,15 +46,18 @@ function newgame() {
 }
 
 function changeColor(color) {
-	let element = document.getElementById("currentcolor");
-	element.style.backgroundColor = color;
+	let element = document.getElementById(capitalize(currentColor));
+	element.className = "";
+	currentColor = color;
+	element = document.getElementById(capitalize(currentColor));
+	element.className = "selected";
 	document.getElementById("Background").style.cursor="url(" + color + ".cur) 16 16, auto";
 }
 
 function colorme(thisone) {
 	if (thisone.id.substring(0,1) == currentrow || thisone.id.substring(0,2) == currentrow) {
-		thisone.childNodes[0].style.backgroundColor = document.getElementById("currentcolor").style.backgroundColor;
-		thisone.childNodes[0].style.backgroundImage = "radial-gradient(white -50%, " + document.getElementById("currentcolor").style.backgroundColor + " 60%, black 85%)";
+		thisone.childNodes[0].style.backgroundColor = currentColor;
+		thisone.childNodes[0].style.backgroundImage = "radial-gradient(white -50%, " + currentColor + " 60%, black 85%)";
 		thisone.className = "placed-pin";
 	}
 }

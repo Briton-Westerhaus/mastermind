@@ -15,7 +15,21 @@
 			<div style="clear: both; font-size: 0px;">.</div>
 			<!--Game box-->
 			<div id="Background">
-				<div class="colors"><h3>Current Color:</h3><section id="currentcolor"></section></div>
+				<table class="selections">
+					<tbody>
+						<tr>
+							<th colspan="6" class="colors-header">Choose your color:</th>
+						</tr>
+						<tr>
+							<td id="Red" onclick="changeColor('red')" style="background-color:red" onmouseover="this.style.backgroundColor='#FF5555'" onmouseout="this.style.backgroundColor='red'"></td>
+							<td id="Orange" onclick="changeColor('orange')" style="background-color:orange" onmouseover="this.style.backgroundColor='#FFCC66'" onmouseout="this.style.backgroundColor='orange'"></td>
+							<td id="Yellow" onclick="changeColor('yellow')" style="background-color:yellow" onmouseover="this.style.backgroundColor='#FFFF77'" onmouseout="this.style.backgroundColor='yellow'"></td>
+							<td id="Green" onclick="changeColor('green')" style="background-color:green" onmouseover="this.style.backgroundColor='#11AA11'" onmouseout="this.style.backgroundColor='green'"></td>
+							<td id="Blue" onclick="changeColor('blue')" style="background-color:blue" onmouseover="this.style.backgroundColor='#5555FF'" onmouseout="this.style.backgroundColor='blue'"></td>
+							<td id="White" onclick="changeColor('white')" style="background-color:white" onmouseover="this.style.backgroundColor='#FFFFDD'" onmouseout="this.style.backgroundColor='white'"></td>
+						</tr>
+					</tbody>
+				</table>
 				<table class="arrows">
 					<tbody>
 						<tr><td id="1"></td></tr>
@@ -185,25 +199,6 @@
 						</tbody>
 					</table>
 				</div>
-				<table class="selections">
-					<tbody>
-						<tr>
-							<th colspan="2" class="colors-header">Choose your color:</th>
-						</tr>
-						<tr>
-							<td onclick="changeColor('red')" style="background-color:red" onmouseover="this.style.backgroundColor='#FF5555'" onmouseout="this.style.backgroundColor='red'"></td>
-							<td onclick="changeColor('blue')" style="background-color:blue" onmouseover="this.style.backgroundColor='#5555FF'" onmouseout="this.style.backgroundColor='blue'"></td>
-						</tr>
-						<tr>
-							<td onclick="changeColor('orange')" style="background-color:orange" onmouseover="this.style.backgroundColor='#FFCC66'" onmouseout="this.style.backgroundColor='orange'"></td>
-							<td onclick="changeColor('white')" style="background-color:white" onmouseover="this.style.backgroundColor='#FFFFDD'" onmouseout="this.style.backgroundColor='white'"></td>
-						</tr>
-						<tr>
-							<td onclick="changeColor('yellow')" style="background-color:yellow" onmouseover="this.style.backgroundColor='#FFFF77'" onmouseout="this.style.backgroundColor='yellow'"></td>
-							<td onclick="changeColor('green')" style="background-color:green" onmouseover="this.style.backgroundColor='#11AA11'" onmouseout="this.style.backgroundColor='green'"></td>
-						</tr>
-					</tbody>
-				</table>
 				<div style="clear: both; font-size: 0px;">.</div>
 				<button onclick="guess()" class="guess">Take a guess!</button>
 			</div>

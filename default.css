@@ -34,6 +34,7 @@ h1 {
 	padding-right: -10px;
 	padding-bottom: 10px;
 	border-spacing: 4px;
+	margin-left: -56px;
 }
 
 .arrows td {
@@ -112,31 +113,10 @@ td.arrow-container {
 	box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, .2);
 }
 
-.colors {
-	margin-left: auto;
-	margin-right: auto;
-	white-space: nowrap;
-	width: max-content;
-}
-
-div.colors {
-	margin-top: 2.5%;
-	margin-bottom: 2.5%;
-}
-
-.colors h3, .colors-header {
+.colors-header {
 	font-size: 20px;
 	font-family: 'Impact';
 	font-weight: normal;
-}
-
-.colors h3 {
-	display: inline-block;
-	line-height: 64px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	vertical-align: top;
-	margin-right: 5px;
 }
 
 #currentcolor {
@@ -146,13 +126,21 @@ div.colors {
 
 .selections {
 	vertical-align: top;
-	display: inline-block;
+	margin-bottom: 10px; 
+	border-spacing: 4px;
 }
 
 .selections td {
-	height: 100px;
-	width: 100px;
+	height: 64px;
+	width: 64px;
 	cursor: pointer;
+}
+
+.selections td.selected {
+	height: 63px;
+	width: 63px;
+	border: 1px solid black;
+	cursor: inherit;
 }
 
 table {
