@@ -3,8 +3,8 @@
 	src: url("Goldman.ttf");
 }
 
-h3 {
-	font-size: 27px;
+* {
+	font-family: Arial, Helvetica, sans-serif
 }
 
 h1 {
@@ -13,6 +13,12 @@ h1 {
 	display: inline-block;
 	font-weight: normal;
 }
+
+
+h3 {
+	font-size: 27px;
+}
+
 
 #currentcolor {
 	background-color: red;
@@ -121,8 +127,8 @@ td.arrow-container {
 
 .colors-header {
 	font-size: 20px;
-	font-family: 'Impact';
-	font-weight: normal;
+	font-weight: bold;
+	padding: 8px;
 }
 
 #currentcolor {
