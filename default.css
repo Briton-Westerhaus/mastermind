@@ -1,11 +1,17 @@
+@font-face {
+	font-family: "Goldman";
+	src: url("Goldman.ttf");
+}
+
 h3 {
 	font-size: 27px;
 }
 
 h1 {
 	font-size: 48px;
-	font-family: 'Impact';
+	font-family: "Goldman", Arial, Helvetica, sans-serif;
 	display: inline-block;
+	font-weight: normal;
 }
 
 #currentcolor {
