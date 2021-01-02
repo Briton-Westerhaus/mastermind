@@ -35,6 +35,7 @@ h3 {
 	width: auto;
 	cursor: url("red.cur") 16 16, auto;
 	width: 60%;
+	border-radius: 8px;
 }
 
 .arrows {
