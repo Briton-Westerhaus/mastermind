@@ -175,7 +175,7 @@ table {
 
 .modal {
     width: 40%;
-    height: 30%;
+    height: 35%;
     position: absolute;
     border: 1px solid black;
     left: 30%;
@@ -231,7 +231,8 @@ button.help {
     box-shadow: none;
     font-weight: bold;
     position: relative;
-    left: 17em;
+	left: 17em;
+	cursor: pointer;
 }
 
 .guess {
