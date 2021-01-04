@@ -67,13 +67,13 @@ function changeColor(color) {
 
 /**
  * Places a guess pin on the board
- * @param {Element} thisOne - The board square to place the pin in. 
+ * @param {Element} square - The board square to place the pin in. 
  */
-function colorMe(thisone) {
-	if (thisone.id.substring(0,1) == currentRow || thisone.id.substring(0,2) == currentRow) {
-		thisone.childNodes[0].style.backgroundColor = currentColor;
-		thisone.childNodes[0].style.backgroundImage = "radial-gradient(white -50%, " + currentColor + " 60%, black 85%)";
-		thisone.className = "placed-pin";
+function colorMe(square) {
+	if (square.id.substring(0,1) == currentRow || square.id.substring(0,2) == currentRow) {
+		square.childNodes[0].style.backgroundColor = currentColor;
+		square.childNodes[0].style.backgroundImage = "radial-gradient(white -50%, " + currentColor + " 60%, black 85%)";
+		square.className = "placed-pin";
 	}
 }
 
@@ -141,7 +141,7 @@ async function endGame(message) {
 	let answer = confirm(message + "\nWould you like to play a new game?");
 	
 	if (answer)
-		window.location.reload(false);
+		window.location.reload();
 }
 
 /**
